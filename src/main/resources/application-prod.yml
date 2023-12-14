@@ -6,9 +6,9 @@ spring:
  
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${database.url}
-    username: ${database.user}
-    password: ${database.pass}
+    url: ${database.chat.url}
+    username: ${database.chat.user}
+    password: ${database.chat.pass}
 
   jpa:
     show-sql: true
