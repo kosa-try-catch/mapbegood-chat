@@ -26,6 +26,13 @@ spring:
 jwt:
   key: ${jwt.secret.key}
 
+aws:
+  paramstore:
+    enabled: true
+    prefix: /mapbegood
+    name: app
+    profile-separator: _
+
 logging:
   level:
     org:
