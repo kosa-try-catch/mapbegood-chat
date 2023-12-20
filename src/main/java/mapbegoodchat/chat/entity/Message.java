@@ -22,6 +22,7 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long msgId;
     private Long groupId;
+    private String profileImage;
     private String sender;
     private String message;
     @CreatedDate
