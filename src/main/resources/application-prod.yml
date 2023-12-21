@@ -23,6 +23,10 @@ spring:
         default_batch_fetch_size: 100
       open-in-view: false
 
+  redis:
+    host: ${redis.host}
+    port: ${redis.port}
+
 jwt:
   key: ${jwt.secret.key}
 

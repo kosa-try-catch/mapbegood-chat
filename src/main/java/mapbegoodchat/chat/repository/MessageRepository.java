@@ -9,4 +9,5 @@ import java.util.List;
 
 public interface MessageRepository extends JpaRepository<Message, Long> {
     List<Message> findByGroupId(Long groupId, Pageable pageable);
+    List<Message> findAllByGroupId(Long groupId);
 }

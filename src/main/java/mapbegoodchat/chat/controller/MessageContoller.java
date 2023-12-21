@@ -55,4 +55,11 @@ public class MessageContoller {
         log.error(String.valueOf(messageList.size()));
         return new ResponseEntity<>(messageList, HttpStatus.OK);
     }
+
+    @GetMapping("/msg-all/{groupId}")
+    public ResponseEntity groupAllMessage(@PathVariable("groupId") Long groupId) {
+        List<Message> messageList = service.messageAll(groupId);
+        log.error("Message All Size: " + messageList.size());
+        return new ResponseEntity<>(messageList, HttpStatus.OK);
+    }
 }

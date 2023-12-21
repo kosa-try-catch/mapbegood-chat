@@ -26,4 +26,8 @@ public class MessageService {
                 PageRequest.of(page-1, 50, Sort.by("sendAt").descending())
         );
     }
+
+    public List<Message> messageAll(Long groupId) {
+        return repository.findAllByGroupId(groupId);
+    }
 }
